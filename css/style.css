@@ -1,0 +1,443 @@
+@font-face {
+  font-family: "Droid Kufi";
+  src: url("../fonts/droidkufi-bold-webfont.woff") format("woff2"),
+    url("../fonts/droidkufi-bold-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Droid Kufi";
+  src: url("../fonts/droidkufi-regular-webfont.woff2") format("woff2"),
+    url("../fonts/droidkufi-regular-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --mainColor: #0a50a1;
+  --backColor: #c1d5ec;
+}
+body {
+  height: 4000px;
+}
+/* Start header  */
+.header {
+  background-image: url("../images/desktop-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+}
+.header nav .logo {
+  width: 80px;
+  height: 80px;
+}
+.header nav li a {
+  color: white !important;
+  font-family: "Droid Kufi";
+  font-size: 19px;
+}
+.header nav li:not(:last-child) a:hover {
+  color: var(--mainColor) !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.header nav .btn-contact a {
+  color: var(--mainColor) !important;
+  text-align: center;
+  background: #fff !important;
+  width: 120px;
+  border-radius: 30px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+}
+.header nav li:not(:last-child) a.active:before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: white !important;
+}
+
+/* Need some Edit  */
+
+/* .header nav li:not(:last-child):hover a.active:before {
+  content: "";
+  display: block;
+  transition: all 0.5s ease-in-out;
+  width: 50%;
+  height: 2px;
+  background: white !important;
+}
+
+*/
+.header nav .btn-contact a:hover {
+  color: #fff !important;
+  text-align: center;
+  background: var(--mainColor) !important;
+  transition: all 0.5s ease-in-out;
+}
+.header .main-content {
+  text-align: right;
+}
+.header .main-content h1 {
+  font-family: "Droid Kufi";
+  font-weight: bold;
+}
+.header .main-content p {
+  font-family: "Droid Kufi";
+  font-weight: 300;
+}
+/* End header */
+
+/* Start main */
+.main-content {
+  font-family: "Droid Kufi";
+  height: 100vh;
+}
+.main-content h1,
+p {
+  color: white !important;
+}
+.main-content .content p {
+  width: 480px;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: normal;
+}
+.main-content .contact-button ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.main-content .contact-button ul li a.cont-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white !important;
+  background-color: var(--mainColor) !important;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 50px;
+}
+.main-content .contact-button ul li a.cont-btn:hover {
+  background: white !important;
+  color: var(--mainColor) !important;
+  transition: all 0.5s ease-in-out;
+}
+.main-content .contact-button ul li a.read-more {
+  display: inline-block;
+  text-decoration: none;
+  color: white !important;
+  background-color: rgba(255, 248, 248, 0.4) !important;
+  border: 1px solid white;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 50px;
+}
+.main-content .scrol-down {
+  text-align: center;
+}
+.main-content .scrol-down i {
+  margin-top: 10px;
+  color: white;
+}
+/* End main */
+
+/* Start our services */
+.our-services {
+  padding: 60px 30px;
+  background-color: var(--backColor) !important;
+}
+.our-services h2 {
+  font-family: "Droid Kufi";
+  color: var(--mainColor);
+  font-size: 40px;
+}
+.our-services h2:after {
+  content: "";
+  display: block;
+  width: 75px;
+  margin: auto;
+  height: 2px;
+  background: var(--mainColor) !important;
+}
+
+.our-services .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  line-height: 1.7;
+  font-family: "Droid Kufi";
+  background: white;
+  padding: 10px;
+}
+.our-services .service h4 {
+  font-size: 25px;
+  color: var(--mainColor);
+}
+.our-services .service small {
+  color: #808488;
+  line-height: 1.5;
+}
+.our-services .service a {
+  text-decoration: none;
+  color: var(--mainColor);
+}
+.our-services .see-more a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Droid Kufi";
+  font-size: 17px;
+  color: white !important;
+  background-color: var(--mainColor) !important;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 50px;
+}
+.our-services .see-more a:hover {
+  background: white !important;
+  color: var(--mainColor) !important;
+  transition: all 0.5s ease-in-out;
+}
+/* End our services */
+
+/* Start our specialities  */
+.our-specialities {
+  padding: 60px 30px;
+}
+.our-specialities h2 {
+  font-family: "Droid Kufi";
+  color: var(--mainColor);
+  font-size: 40px;
+}
+.our-specialities h2:after {
+  content: "";
+  display: block;
+  width: 75px;
+  margin: auto;
+  height: 2px;
+  background: var(--mainColor) !important;
+}
+
+.our-specialities .speciality {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  line-height: 1.7;
+  font-family: "Droid Kufi";
+  background: white;
+  padding: 10px;
+  box-shadow: 3px 3px 3px #ddd;
+}
+.our-specialities .speciality h4 {
+  font-size: 25px;
+  color: var(--mainColor);
+}
+.our-specialities .speciality small {
+  color: #808488;
+  line-height: 1.5;
+}
+.our-specialities .speciality a {
+  text-decoration: none;
+  color: var(--mainColor);
+}
+.our-specialities .see-more a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Droid Kufi";
+  font-size: 17px;
+  color: white !important;
+  background-color: var(--mainColor) !important;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 50px;
+}
+.our-specialities .see-more a:hover {
+  background: white !important;
+  color: var(--mainColor) !important;
+  transition: all 0.5s ease-in-out;
+}
+/* End our specialities  */
+
+/* Start our statistics */
+.our-statistics {
+}
+.our-statistics h2 {
+  font-family: "Droid Kufi";
+  color: var(--mainColor);
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.our-statistics h2:after {
+  content: "";
+  display: block;
+  width: 75px;
+  margin: auto;
+  height: 2px;
+  background: var(--mainColor) !important;
+}
+.our-statistics .box-statistics {
+  padding: 10px 5px;
+  background-image: url("../images/statistics.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+.our-statistics .statistic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background: white !important;
+  margin: 0;
+  padding: 10px 20px;
+  font-family: "Droid Kufi";
+}
+.our-statistics .statistic small {
+  font-size: 35px;
+  color: var(--mainColor) !important;
+  font-family: "Droid Kufi";
+  margin-bottom: -5px;
+}
+.our-statistics .statistic p {
+  margin-top: 0;
+  font-size: 25px;
+  color: var(--mainColor) !important;
+  font-family: "Droid Kufi";
+}
+/* End our statistics */
+
+/* Start our teachers  */
+.our-teachers {
+  padding: 60px 30px;
+  background: var(--backColor);
+}
+.our-teachers h3 {
+  font-family: "Droid Kufi";
+  color: var(--mainColor);
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+.our-teachers h3:after {
+  content: "";
+  display: block;
+  width: 75px;
+  margin: auto;
+  height: 2px;
+  background: var(--mainColor) !important;
+}
+.our-teachers .teacher img {
+  width: 100%;
+  height: 150px;
+}
+
+.our-teachers .teacher .teacher-img img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  top: -80px;
+  margin-bottom: -65px;
+}
+.our-teachers .teacher h4 {
+  color: var(--mainColor) !important;
+  font-family: "Droid Kufi";
+  font-weight: bold;
+}
+.our-teachers .teacher a {
+  display: block;
+  width: 150px;
+  margin: auto;
+  color: white !important;
+  font-family: "Droid Kufi";
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  background: var(--mainColor) !important;
+}
+.our-teachers .teacher a:hover {
+  background: white !important;
+  transition: all 0.5s ease-in-out;
+  color: var(--mainColor) !important;
+}
+.our-teachers .see-more a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Droid Kufi";
+  font-size: 17px;
+  color: white !important;
+  background-color: var(--mainColor) !important;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 50px;
+}
+.our-teachers .see-more a:hover {
+  background: white !important;
+  color: var(--mainColor) !important;
+  transition: all 0.5s ease-in-out;
+}
+/* End our teachers */
+
+/* Start Testemonial  */
+
+.our-testemonial h3 {
+  font-family: "Droid Kufi";
+  color: var(--mainColor);
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.our-testemonial h3:after {
+  content: "";
+  display: block;
+  width: 75px;
+  margin: auto;
+  height: 2px;
+  background: var(--mainColor) !important;
+}
+
+.our-testemonial .carousel .carousel-item .carousel-caption {
+  position: absolute;
+  text-align: center;
+  top: 80px;
+}
+.our-testemonial .carousel-caption .line {
+  display: block;
+  float: right;
+  border-top: 2px solid white;
+  height: 2px;
+  line-height: 1.5;
+}
+/* End Testemonial  */
+
+/* Start our Partners */
+.our-partners {
+  padding: 30px 30px;
+}
+.our-partners h3 {
+  font-family: "Droid Kufi";
+  color: var(--mainColor);
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.our-partners h3:after {
+  content: "";
+  display: block;
+  width: 75px;
+  margin: auto;
+  height: 2px;
+  background: var(--mainColor) !important;
+}
+/* End our Partners */
