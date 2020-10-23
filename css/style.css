@@ -1,25 +1,33 @@
 @font-face {
-  font-family: "Droid Kufi";
-  src: url("../fonts/droidkufi-bold-webfont.woff") format("woff2"),
+  font-family: "droid_arabic_kufibold";
+  src: url("../fonts/droidkufi-bold-webfont.woff2") format("woff2"),
     url("../fonts/droidkufi-bold-webfont.woff") format("woff");
-  font-weight: 900;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: "Droid Kufi";
-  src: url("../fonts/droidkufi-regular-webfont.woff2") format("woff2"),
-    url("../fonts/droidkufi-regular-webfont.woff") format("woff");
-  font-weight: 500;
+  font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "droid_arabic_kufiregular";
+  src: url("../fonts/droidkufi-regular-webfont.woff2") format("woff2"),
+    url("../fonts/droidkufi-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --mainColor: #0a50a1;
   --backColor: #c1d5ec;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  height: 4000px;
+  font-family: "droid_arabic_kufiregular";
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fa {
+  font-family: FontAwesome;
 }
 /* Start header  */
 .header {
@@ -89,6 +97,7 @@ body {
 .header .main-content p {
   font-family: "Droid Kufi";
   font-weight: 300;
+  width: 250px;
 }
 /* End header */
 
@@ -102,7 +111,8 @@ p {
   color: white !important;
 }
 .main-content .content p {
-  width: 480px;
+  width: 450px;
+  text-align: justify;
   line-height: 1.5;
   font-size: 18px;
   font-weight: normal;
@@ -174,6 +184,7 @@ p {
   font-family: "Droid Kufi";
   background: white;
   padding: 10px;
+  margin-bottom: 10px;
 }
 .our-services .service h4 {
   font-size: 25px;
@@ -233,6 +244,7 @@ p {
   font-family: "Droid Kufi";
   background: white;
   padding: 10px;
+  margin-bottom: 10px;
   box-shadow: 3px 3px 3px #ddd;
 }
 .our-specialities .speciality h4 {
@@ -268,6 +280,7 @@ p {
 
 /* Start our statistics */
 .our-statistics {
+  height: auto;
 }
 .our-statistics h2 {
   font-family: "Droid Kufi";
@@ -284,12 +297,13 @@ p {
   background: var(--mainColor) !important;
 }
 .our-statistics .box-statistics {
-  padding: 10px 5px;
+  padding: 50px;
+
   background-image: url("../images/statistics.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  min-height: 400px;
 }
 .our-statistics .statistic {
   display: flex;
@@ -297,19 +311,22 @@ p {
   justify-content: center;
   align-content: center;
   background: white !important;
-  margin: 0;
-  padding: 10px 20px;
+  padding: 20px;
+  margin-bottom: 20px;
   font-family: "Droid Kufi";
 }
-.our-statistics .statistic small {
+
+.our-statistics .statistic small.counter {
   font-size: 35px;
   color: var(--mainColor) !important;
   font-family: "Droid Kufi";
   margin-bottom: -5px;
+  animation-duration: 1s;
+  animation-delay: 0s;
 }
 .our-statistics .statistic p {
   margin-top: 0;
-  font-size: 25px;
+  font-size: 20px;
   color: var(--mainColor) !important;
   font-family: "Droid Kufi";
 }
@@ -333,6 +350,9 @@ p {
   margin: auto;
   height: 2px;
   background: var(--mainColor) !important;
+}
+.our-teachers .teacher {
+  margin-bottom: 20px;
 }
 .our-teachers .teacher img {
   width: 100%;
@@ -408,9 +428,9 @@ p {
 }
 
 .our-testemonial .carousel .carousel-item .carousel-caption {
-  position: absolute;
-  text-align: center;
-  top: 80px;
+  bottom: 150px;
+  padding: 10px;
+  margin-bottom: 0;
 }
 .our-testemonial .carousel-caption .line {
   display: block;
@@ -424,6 +444,7 @@ p {
 /* Start our Partners */
 .our-partners {
   padding: 30px 30px;
+  margin-bottom: 30px;
 }
 .our-partners h3 {
   font-family: "Droid Kufi";
@@ -440,4 +461,200 @@ p {
   height: 2px;
   background: var(--mainColor) !important;
 }
+.our-partners .partner {
+  margin-bottom: 20px;
+}
 /* End our Partners */
+
+/* Start Contact Us */
+.contact-us {
+  padding: 60px 30px;
+  background: var(--backColor);
+}
+.contact-us h3 {
+  font-family: "Droid Kufi";
+  color: var(--mainColor);
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.contact-us h3:after {
+  content: "";
+  display: block;
+  width: 75px;
+  margin: auto;
+  height: 2px;
+  background: var(--mainColor) !important;
+}
+.contact-us label {
+  font-family: "Droid Kufi";
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--mainColor);
+}
+.contact-us input[type="email"] {
+  border: 1px solid var(--mainColor);
+  border-radius: 30px;
+}
+.contact-us textarea {
+  border: 1px solid var(--mainColor);
+  padding: 20px !important;
+  border-radius: 30px;
+}
+.contact-us .btn-send {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Droid Kufi";
+  font-size: 17px;
+  color: white !important;
+  background-color: var(--mainColor) !important;
+  padding: 10px;
+  width: 100px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px;
+}
+.contact-us .btn-send:hover {
+  background: white !important;
+  color: var(--mainColor) !important;
+  transition: all 0.5s ease-in-out;
+}
+/* End Contact Us */
+
+/* Start Contact-info */
+.contact-info {
+  padding: 25px;
+}
+.contact-info small {
+  font-family: "Droid Kufi";
+  font-size: 15px;
+  color: var(--mainColor) !important;
+  font-weight: 500;
+  text-align: center;
+}
+/* End Contact-info */
+.footer {
+  padding: 30px 30px;
+  background: var(--mainColor);
+}
+.footer h5 {
+  color: white;
+  font-size: 23px;
+  font-family: "Droid Kufi";
+  margin-bottom: 15px;
+}
+.footer p {
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: normal;
+  font-family: "Droid Kufi";
+  margin-bottom: 15px;
+}
+.footer .social-media ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.footer .links ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Droid Kufi";
+}
+
+/* Start copyright */
+.copyright {
+  padding: 5px 5px;
+}
+.copyright p {
+  margin-top: 15px;
+  font-family: "Droid Kufi";
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--mainColor) !important;
+}
+/* End copyright */
+
+/* Xtra small Screen */
+@media (max-width: 768px) {
+  .header nav li a {
+    color: white !important;
+    font-family: "Droid Kufi";
+    font-size: 19px;
+  }
+  .header nav li:not(:last-child) a:hover {
+    transition: all 0.5s ease-in-out;
+    color: white !important;
+    text-decoration: underline;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: auto;
+    background: var(--mainColor);
+    z-index: 999;
+  }
+
+  .navbar-collapse.collapsing {
+    height: auto;
+    -webkit-transition: left 0.3s ease;
+    -o-transition: left 0.3s ease;
+    -moz-transition: left 0.3s ease;
+    transition: left 0.3s ease;
+    left: -100%;
+  }
+  .navbar-collapse.show {
+    left: 0;
+    -webkit-transition: left 0.3s ease-in;
+    -o-transition: left 0.3s ease-in;
+    -moz-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
+  }
+  .main-content .content p {
+    width: auto;
+    font-size: 15px;
+  }
+  .main-content .content {
+    height: 60vh !important;
+  }
+  .main-content .scrol-down {
+    margin-top: 25px;
+  }
+  .our-testemonial .carousel .carousel-item .carousel-caption {
+    bottom: 190px;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+
+  .our-testemonial .carousel .carousel-item .carousel-caption p {
+    font-size: 10px;
+  }
+
+  .navbar-toggler:not(:disabled):not(.disabled) {
+    background: white;
+    border: 2px solid var(--mainColor);
+    outline: none;
+  }
+}
+
+/* Small Screen */
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .main-content .content p {
+    width: auto;
+  }
+}
+
+/* Medium Screen */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/*  Large Screen  */
+
+@media (min-width: 1200px) {
+}
