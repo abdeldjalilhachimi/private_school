@@ -1,17 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
 @font-face {
-  font-family: "droid_arabic_kufibold";
-  src: url("../fonts/droidkufi-bold-webfont.woff2") format("woff2"),
-    url("../fonts/droidkufi-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "droid_arabic_kufiregular";
-  src: url("../fonts/droidkufi-regular-webfont.woff2") format("woff2"),
-    url("../fonts/droidkufi-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-family: Font awesome\5 Free;
+  src: url("../webfonts/fa-solid-900.woff");
+  src: url("../webfonts/fa-solid-900.woff2");
+  src: url("../webfonts/fa-regular-400.woff");
+  src: url("../webfonts/fa-regular-400.woff2");
+  src: url("../webfonts/fa-brands-400.woff2");
+  src: url("../webfonts/fa-light-300.woff2");
 }
 :root {
   --mainColor: #0a50a1;
@@ -21,14 +16,11 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "droid_arabic_kufiregular";
+  font-family: "Cairo", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-.fa {
-  font-family: FontAwesome;
-}
 /* Start header  */
 .header {
   background-image: url("../images/desktop-background.jpg");
@@ -40,11 +32,14 @@ body {
 .header nav .logo {
   width: 80px;
   height: 80px;
+  border-radius: 50%;
 }
 .header nav li a {
   color: white !important;
-  font-family: "Droid Kufi";
-  font-size: 19px;
+  font-family: "Cairo", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
 }
 .header nav li:not(:last-child) a:hover {
   color: var(--mainColor) !important;
@@ -69,8 +64,6 @@ body {
   background: white !important;
 }
 
-/* Need some Edit  */
-
 /* .header nav li:not(:last-child):hover a.active:before {
   content: "";
   display: block;
@@ -91,11 +84,11 @@ body {
   text-align: right;
 }
 .header .main-content h1 {
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   font-weight: bold;
 }
 .header .main-content p {
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   font-weight: 300;
   width: 250px;
 }
@@ -103,8 +96,8 @@ body {
 
 /* Start main */
 .main-content {
-  font-family: "Droid Kufi";
-  height: 100vh;
+  font-family: "Cairo", sans-serif;
+  height: 75vh;
 }
 .main-content h1,
 p {
@@ -162,7 +155,7 @@ p {
   background-color: var(--backColor) !important;
 }
 .our-services h2 {
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   color: var(--mainColor);
   font-size: 40px;
 }
@@ -181,7 +174,7 @@ p {
   justify-content: center;
   align-content: center;
   line-height: 1.7;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   background: white;
   padding: 10px;
   margin-bottom: 10px;
@@ -201,7 +194,7 @@ p {
 .our-services .see-more a {
   display: inline-block;
   text-decoration: none;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   font-size: 17px;
   color: white !important;
   background-color: var(--mainColor) !important;
@@ -222,7 +215,7 @@ p {
   padding: 60px 30px;
 }
 .our-specialities h2 {
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   color: var(--mainColor);
   font-size: 40px;
 }
@@ -241,7 +234,7 @@ p {
   justify-content: center;
   align-content: center;
   line-height: 1.7;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   background: white;
   padding: 10px;
   margin-bottom: 10px;
@@ -262,7 +255,7 @@ p {
 .our-specialities .see-more a {
   display: inline-block;
   text-decoration: none;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   font-size: 17px;
   color: white !important;
   background-color: var(--mainColor) !important;
@@ -283,7 +276,7 @@ p {
   height: auto;
 }
 .our-statistics h2 {
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   color: var(--mainColor);
   font-size: 40px;
   margin-bottom: 50px;
@@ -313,13 +306,13 @@ p {
   background: white !important;
   padding: 20px;
   margin-bottom: 20px;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
 }
 
 .our-statistics .statistic small.counter {
   font-size: 35px;
   color: var(--mainColor) !important;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   margin-bottom: -5px;
   animation-duration: 1s;
   animation-delay: 0s;
@@ -328,7 +321,7 @@ p {
   margin-top: 0;
   font-size: 20px;
   color: var(--mainColor) !important;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
 }
 /* End our statistics */
 
@@ -338,7 +331,7 @@ p {
   background: var(--backColor);
 }
 .our-teachers h3 {
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   color: var(--mainColor);
   font-size: 45px;
   margin-bottom: 50px;
@@ -371,7 +364,7 @@ p {
 }
 .our-teachers .teacher h4 {
   color: var(--mainColor) !important;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   font-weight: bold;
 }
 .our-teachers .teacher a {
@@ -379,7 +372,7 @@ p {
   width: 150px;
   margin: auto;
   color: white !important;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   text-decoration: none;
   padding: 10px;
   border-radius: 50px;
@@ -393,7 +386,7 @@ p {
 .our-teachers .see-more a {
   display: inline-block;
   text-decoration: none;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   font-size: 17px;
   color: white !important;
   background-color: var(--mainColor) !important;
@@ -412,7 +405,7 @@ p {
 /* Start Testemonial  */
 
 .our-testemonial h3 {
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   color: var(--mainColor);
   font-size: 40px;
   margin-top: 50px;
@@ -447,7 +440,7 @@ p {
   margin-bottom: 30px;
 }
 .our-partners h3 {
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   color: var(--mainColor);
   font-size: 40px;
   margin-top: 50px;
@@ -472,7 +465,7 @@ p {
   background: var(--backColor);
 }
 .contact-us h3 {
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   color: var(--mainColor);
   font-size: 40px;
   margin-bottom: 50px;
@@ -486,7 +479,7 @@ p {
   background: var(--mainColor) !important;
 }
 .contact-us label {
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   font-size: 15px;
   font-weight: bold;
   color: var(--mainColor);
@@ -503,7 +496,7 @@ p {
 .contact-us .btn-send {
   display: inline-block;
   text-decoration: none;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   font-size: 17px;
   color: white !important;
   background-color: var(--mainColor) !important;
@@ -520,12 +513,69 @@ p {
 }
 /* End Contact Us */
 
+/* Start FQA Section  */
+
+.our-faq {
+  padding: 60px 30px;
+  background-color: var(--backColor) !important;
+}
+.our-faq h2 {
+  font-family: "Cairo", sans-serif;
+  color: var(--mainColor);
+  font-size: 40px;
+}
+.our-faq h2:after {
+  content: "";
+  display: block;
+  width: 75px;
+  margin: auto;
+  height: 2px;
+  background: var(--mainColor) !important;
+}
+
+.our-faq .card .card-header {
+  text-align: right;
+  display: block;
+  background: #fff;
+  color: var(--mainColor);
+}
+
+.our-faq .card .card-header button.btn-link:before {
+  font-family: "Font Awesome 5 Free";
+  padding-left: 10px;
+
+  content: "\f067";
+  font-weight: 900;
+}
+
+.our-faq .card .card-header button.btn-link[aria-expanded="true"]:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+  font-weight: 900;
+}
+.our-faq .card .collapsing {
+  background: var(--mainColor);
+  line-height: 30px;
+  color: #fff;
+}
+
+.our-faq .card .collapse {
+  border: 0;
+}
+
+.our-faq .card .collapse.show {
+  background: var(--mainColor);
+  line-height: 30px;
+  color: #fff;
+}
+/* End  FQA Section  */
+
 /* Start Contact-info */
 .contact-info {
   padding: 25px;
 }
 .contact-info small {
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   font-size: 15px;
   color: var(--mainColor) !important;
   font-weight: 500;
@@ -536,10 +586,16 @@ p {
   padding: 30px 30px;
   background: var(--mainColor);
 }
+.footer .company-info img {
+  display: block;
+  width: 50px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
 .footer h5 {
   color: white;
   font-size: 23px;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   margin-bottom: 15px;
 }
 .footer p {
@@ -547,7 +603,7 @@ p {
   font-size: 15px;
   text-align: justify;
   font-weight: normal;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   margin-bottom: 15px;
 }
 .footer .social-media ul li {
@@ -557,7 +613,7 @@ p {
 .footer .links ul li a {
   text-decoration: none;
   color: white;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
 }
 
 /* Start copyright */
@@ -566,7 +622,7 @@ p {
 }
 .copyright p {
   margin-top: 15px;
-  font-family: "Droid Kufi";
+  font-family: "Cairo", sans-serif;
   font-size: 15px;
   font-weight: bold;
   color: var(--mainColor) !important;
@@ -577,7 +633,7 @@ p {
 @media (max-width: 768px) {
   .header nav li a {
     color: white !important;
-    font-family: "Droid Kufi";
+    font-family: "Cairo", sans-serif;
     font-size: 19px;
   }
   .header nav li:not(:last-child) a:hover {
@@ -586,34 +642,6 @@ p {
     text-decoration: underline;
   }
 
-  .navbar-collapse {
-    position: absolute;
-    top: 130px;
-    left: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    height: auto;
-    background: var(--mainColor);
-    z-index: 999;
-  }
-
-  .navbar-collapse.collapsing {
-    height: auto;
-    -webkit-transition: left 0.3s ease;
-    -o-transition: left 0.3s ease;
-    -moz-transition: left 0.3s ease;
-    transition: left 0.3s ease;
-    left: -100%;
-  }
-  .navbar-collapse.show {
-    left: 0;
-    -webkit-transition: left 0.3s ease-in;
-    -o-transition: left 0.3s ease-in;
-    -moz-transition: left 0.3s ease-in;
-    transition: left 0.3s ease-in;
-  }
   .main-content .content p {
     width: auto;
     font-size: 15px;
@@ -644,8 +672,26 @@ p {
 /* Small Screen */
 
 @media (min-width: 767px) and (max-width: 991px) {
+  .header nav li a {
+    color: white !important;
+    font-family: "Cairo", sans-serif;
+    font-size: 19px;
+  }
+  .header nav li:not(:last-child) a:hover {
+    transition: all 0.5s ease-in-out;
+    color: white !important;
+    text-decoration: underline;
+  }
   .main-content .content p {
     width: auto;
+  }
+  .navbar-toggler:not(:disabled):not(.disabled) {
+    background: white;
+    border: 2px solid var(--mainColor);
+    outline: none;
+  }
+  .navbar-collapse {
+    display: block;
   }
 }
 

@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  $(".navbar-toggler").click(function () {
+    if ($(this).attr("aria-expanded").toLowerCase() == "false") {
+      $(".main-content .col").hide();
+    } else {
+      $(".main-content .col").show();
+    }
+  });
+
   // Scroll to first element
   $("#lead-down").click(function () {
     var scrollDistance = $("#lead").next().offset().top;
@@ -20,6 +28,7 @@ $(document).ready(function () {
   });
 
   // Counter up
+
   $(".counter").each(function () {
     $(this)
       .prop("Counter", 0)
